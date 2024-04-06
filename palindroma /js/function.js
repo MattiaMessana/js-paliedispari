@@ -1,19 +1,4 @@
 /**
- * Description controllliamo che la parola sia palindroma
- * @param {string} word
- * @returns {boolean} se è tru allora la parola è palindorma altrimenti è false
- */
-function isPalindrome (word) {
-    const reverseWord = getReverseString(word);
-    if ( word === reverseWord) {
-        return true;
-    } else {
-        return false;
-    }
-}
-
-
-/**
  * Description funzione che inverte la parola scritta dall'utente
  * @param {any} stringToReverse
  * @returns {any}
@@ -25,4 +10,19 @@ function getReverseString(stringToReverse) {
         reverseString += curLetter;
     }
     return reverseString;
+}
+
+
+/**
+ * Description controllliamo che la parola sia palindroma
+ * @param {string} word
+ * @returns {boolean} se è tru allora la parola è palindorma altrimenti è false
+ */
+function isPalindrome (word) {
+    const reverseWord = getReverseString(word);
+    if ( word === reverseWord) {
+        return true;
+    } else {
+        return false;
+    }
 }
